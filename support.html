@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patchcord: Support</title>
+<meta name="description" content="Help with Patchcord: getting two devices linked, sound, timing, plugins in your DAW, and Its Screen.">
+<meta name="theme-color" content="#062A31">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="36" height="36"><span>Patchcord</span></a>
+  <nav><a href="index.html">Home</a><a href="privacy.html">Privacy</a></nav>
+</header>
+<main class="page">
+  <h1>Support</h1>
+  <p>Patchcord is made by one person. If something doesn't work, or doesn't make sense, I want to hear about it.</p>
+  <p class="contact" data-email-line hidden>Email <a data-email href="#"></a> and say which devices you're using and which plugin.</p>
+
+  <h2>Getting started</h2>
+  <p>Open Patchcord on both devices. Tap <b>How It Works</b> on either one and it walks you through the first time: which device has the plugin, choosing it, picking it on the other device, and playing.</p>
+
+  <h2>My devices don't find each other</h2>
+  <ul>
+    <li>Both need Patchcord open, on the same Wi-Fi network, or joined by a USB-C cable.</li>
+    <li>Each device asks once to use the local network. If you said no, turn it on in Settings, Privacy &amp; Security, Local Network, Patchcord.</li>
+    <li>Some guest and office networks keep devices from seeing each other. A USB-C cable between the two works anywhere.</li>
+  </ul>
+
+  <h2>It's linked, but there's no sound</h2>
+  <ul>
+    <li>Check <b>Where its sound plays</b>: <b>Here</b> brings it to the device you're holding, <b>There</b> leaves it on the device that has the plugin.</li>
+    <li>Some iPad plugins need their own app opened once before they make sound anywhere. Open it, then try again.</li>
+  </ul>
+
+  <h2>Is it in time with my song?</h2>
+  <p>Inside a DAW, yes: Patchcord Remote tells your DAW how far behind the sound is, and the DAW lines it up, so recorded and bounced tracks land on the grid. Played live, you hear each note a little after you play it, about as much as the line says under <b>Details</b>. A USB-C cable makes that the shortest.</p>
+
+  <h2>Using it in a DAW</h2>
+  <p>Put <b>Patchcord Remote</b> on an instrument track. On the Mac it's an Audio Unit and a VST3 (Ableton Live sees the VST3 when Audio Units are turned off); on the iPad it's an Audio Unit (AUv3). Choose the plugin from your other device in its window, and play from the track.</p>
+
+  <h2>Its Screen</h2>
+  <ul>
+    <li><b>A Mac plugin on the iPad:</b> the Mac asks once to let Patchcord record the screen. Allow it on the Mac. Only that plugin's window is sent, and you can touch it from the iPad.</li>
+    <li><b>An iPad plugin on the Mac:</b> the iPad asks each time; tap Allow on the iPad. From an iPad you can look but not touch (iPadOS doesn't allow it), so turn its knobs with <b>Knobs</b> or <b>All Settings</b>.</li>
+  </ul>
+</main>
+<footer>
+  <span>© 2026 Chai Wellness</span>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html">Support</a>
+</footer>
+<script>
+  // The support address, in one place. Empty until it exists; then the line above appears.
+  var SUPPORT_EMAIL = "support@patchcordapp.com";
+  if (SUPPORT_EMAIL) { var a = document.querySelector("[data-email]"); a.href = "mailto:" + SUPPORT_EMAIL; a.textContent = SUPPORT_EMAIL; document.querySelector("[data-email-line]").hidden = false; }
+</script>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patchcord: play your iPad's synths from your Mac, and your Mac's from your iPad</title>
+<meta name="description" content="Patchcord plays a plugin on one of your devices from another. Notes go over, the sound comes back into your track, in time. Mac, iPad and iPhone, over Wi-Fi or a USB-C cable.">
+<meta property="og:title" content="Patchcord">
+<meta property="og:description" content="Your best synth is on the other device. Play it anyway.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://patchcordapp.com/">
+<meta property="og:image" content="https://patchcordapp.com/og-image.jpg?v=1">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Patchcord">
+<meta name="twitter:description" content="Your best synth is on the other device. Play it anyway.">
+<meta name="twitter:image" content="https://patchcordapp.com/og-image.jpg?v=1">
+<meta name="theme-color" content="#062A31">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+
+<header class="top">
+  <a class="brand" href="#"><img src="img/icon.svg" alt="" width="36" height="36"><span>Patchcord</span></a>
+  <nav>
+    <a href="#how">How it works</a>
+    <a href="#daw">In your DAW</a>
+    <a href="#play">Made to play</a>
+    <a href="support.html">Support</a>
+  </nav>
+  <span class="soon" data-store-soon>Coming to the App Store</span>
+</header>
+
+<main>
+
+<!-- 1. The claim: name the problem, then the answer -->
+<section class="hero">
+  <h1>Your best synth is on the other device.<br><em>Play it anyway.</em></h1>
+  <p class="lede">Patchcord plays a plugin on one of your devices from another. Your notes go over, the sound comes back into your track, in time. Mac, iPad and iPhone, over Wi-Fi or a USB-C cable.</p>
+  <div class="cta">
+    <a class="store-badge" data-store-live hidden href="#" aria-label="Download Patchcord on the App Store"><img src="img/app-store-badge-white.svg" alt="Download on the App Store" width="132" height="44"></a>
+    <span class="pill" data-store-soon>Coming to the App Store</span>
+  </div>
+
+  <figure class="duo" aria-label="DUNE 3 running on a Mac, played from an iPad">
+    <div class="dev laptop">
+      <button class="shot" data-full="img/mac-dune.webp"><img src="img/mac-dune.webp" alt="DUNE 3, a synth plugin, open on the Mac" loading="eager"></button>
+      <div class="base" aria-hidden="true"></div>
+      <figcaption><b>On the Mac</b> DUNE 3 runs</figcaption>
+    </div>
+    <svg class="cord" viewBox="0 0 220 120" preserveAspectRatio="none" aria-hidden="true">
+      <defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0" stop-color="#E06A24"/><stop offset=".5" stop-color="#F4A04E"/><stop offset="1" stop-color="#FDDCB3"/></linearGradient></defs>
+      <path class="wire" d="M0,60 L18,60 C40,60 44,22 62,22 C80,22 84,98 104,98 C124,98 128,30 146,30 C164,30 168,72 186,72 C196,72 200,60 220,60"/>
+      <path class="pulse" d="M0,60 L18,60 C40,60 44,22 62,22 C80,22 84,98 104,98 C124,98 128,30 146,30 C164,30 168,72 186,72 C196,72 200,60 220,60"/>
+    </svg>
+    <div class="dev tablet">
+      <button class="shot" data-full="img/ipad-its-screen.webp"><img src="img/ipad-its-screen.webp" alt="Patchcord on the iPad, showing DUNE 3's own window live from the Mac" loading="eager"></button>
+      <figcaption><b>On the iPad</b> you see it, turn it and play it</figcaption>
+    </div>
+  </figure>
+</section>
+
+<!-- 2. The problem, the way a producer feels it -->
+<section class="familiar">
+  <h2>Sound familiar?</h2>
+  <div class="cards three">
+    <article>
+      <span class="num">A</span>
+      <h3>The synth you love is an iPad app.</h3>
+      <p>Your songs live in Ableton on the Mac. Getting one into the other means recording audio, sending files and losing the take.</p>
+    </article>
+    <article>
+      <span class="num">B</span>
+      <h3>The big plugins are on the Mac.</h3>
+      <p>You'd rather play them from the couch, with an iPad on your knee or a phone in your hand.</p>
+    </article>
+    <article>
+      <span class="num">C</span>
+      <h3>Two devices, never one instrument.</h3>
+      <p>Every device you own has sounds the others can't reach. Patchcord joins them with a cord you never have to plug in.</p>
+    </article>
+  </div>
+</section>
+
+<!-- 3. How easy the core action is -->
+<section id="how" class="how">
+  <h2>Three steps, and the first one is the only setup.</h2>
+  <ol class="steps">
+    <li>
+      <span class="n">1</span>
+      <h3>Share a plugin</h3>
+      <p>On the device that has it, pick it from your instruments. Up to four at once.</p>
+      <button class="shot" data-full="img/browser.webp"><img src="img/browser.webp" alt="Choosing a plugin to share" loading="lazy"></button>
+    </li>
+    <li>
+      <span class="n">2</span>
+      <h3>Pick it on your other device</h3>
+      <p>It's already in the list. Nobody has to tap anything on the first device.</p>
+      <button class="shot" data-full="img/ipad-knobs.webp"><img src="img/ipad-knobs.webp" alt="DUNE 3 from the Mac, chosen on the iPad, its settings on eight knobs" loading="lazy"></button>
+    </li>
+    <li>
+      <span class="n">3</span>
+      <h3>Play</h3>
+      <p>Keys, a MIDI keyboard or your DAW's notes. Choose where its sound plays: here, there, or neither.</p>
+      <button class="shot" data-full="img/mac-king.webp"><img src="img/mac-king.webp" alt="The other way round: King of FM 2 on the iPad, played from the Mac" loading="lazy"></button>
+    </li>
+  </ol>
+</section>
+
+<!-- 4. The real use: inside a DAW -->
+<section id="daw" class="feature">
+  <div class="copy">
+    <p class="kicker">Patchcord Remote</p>
+    <h2>A plugin that plays a plugin on your other device.</h2>
+    <p>Put Patchcord Remote on a track like any instrument. Your DAW's notes play the synth on your iPad, its sound comes back into the track, and its settings show up as parameters you can automate, map to a controller or move with an LFO.</p>
+    <ul class="ticks">
+      <li><b>In time with your track.</b> Patchcord tells your DAW how far behind the sound is, and the DAW lines it up.</li>
+      <li><b>Notes keep their spacing</b>, to the sample, however busy the Wi-Fi is.</li>
+      <li><b>Bounces work.</b> An offline export waits for every block of sound instead of leaving gaps.</li>
+      <li><b>32 settings slots</b>, named after what they hold, saved with your project.</li>
+    </ul>
+    <!-- CHECK before publishing: which hosts to name. Tested: Ableton Live 12 (VST3, Mac). Passes auval (AUv3): Logic, GarageBand, AUM not yet tried. -->
+    <p class="hosts">AUv3 on Mac and iPad, VST3 on the Mac. Tried in Ableton Live.</p>
+  </div>
+  <button class="shot wide" data-full="img/remote.webp"><img src="img/remote.webp" alt="Patchcord Remote inside a DAW" loading="lazy"></button>
+</section>
+
+<!-- 5. The wow: its own screen on the other device -->
+<section class="feature flip">
+  <div class="copy">
+    <p class="kicker">Its Screen</p>
+    <h2>The plugin's own window, on your other device.</h2>
+    <p>Open a Mac plugin's real window on your iPad and turn its knobs with your finger. From an iPad, the Mac sees the plugin's screen live, to watch while you play.</p>
+  </div>
+  <button class="shot wide" data-full="img/ipad-its-screen.webp"><img src="img/ipad-its-screen-close.webp" alt="DUNE 3's window from the Mac, live on the iPad" loading="lazy"></button>
+</section>
+
+<!-- 6. Everything else, as a grid of twelve -->
+<section id="play" class="grid-sec">
+  <h2>Made to play, not just to connect.</h2>
+  <div class="tiles">
+    <article><h3>Knobs that move themselves</h3><p>Eight knobs, each with Motion: an LFO in time with your song, random steps, following its sound, or swelling on every note.</p></article>
+    <article><h3>An XY pad</h3><p>Turn two settings at once with one finger.</p></article>
+    <article><h3>Perform, full screen</h3><p>Big knobs and keys, nothing else, for playing live.</p></article>
+    <article><h3>Snapshots and Morph</h3><p>Save how it sounds to a pad, tap to bring it all back, or slide between two.</p></article>
+    <article><h3>Its presets</h3><p>Step through the plugin's own presets from the other device.</p></article>
+    <article><h3>Every setting by name</h3><p>All of them, in the plugin's own words, searchable, in groups.</p></article>
+    <article><h3>MIDI keyboards</h3><p>Play with a keyboard on either device. Turn a hardware knob to link it.</p></article>
+    <article><h3>Record it here</h3><p>A 24-bit recording of what you played, on the device you're holding.</p></article>
+    <article><h3>Four at once</h3><p>Share up to four plugins from one device and switch between them.</p></article>
+    <article><h3>Wi-Fi or USB-C</h3><p>Over your network, or a cable between the two for the lowest delay.</p></article>
+    <article><h3>Nothing leaves your room</h3><p>Your devices talk to each other directly. No account, no cloud.</p></article>
+    <article><h3>Mac, iPad and iPhone</h3><p>Any of them shares, any of them plays. A guide shows you the first time.</p></article>
+  </div>
+</section>
+
+<!-- 7. Why I made it: Eric writes this; nothing publishes until he has -->
+<!--
+<section id="story" class="story">
+  <h2>Why I made Patchcord</h2>
+  <p>[Eric's words]</p>
+  <p class="sig">Eric</p>
+</section>
+-->
+
+<section class="close">
+  <img src="img/icon.svg" alt="" width="96" height="96">
+  <h2>Every plugin you own, on every device you use.</h2>
+  <div class="cta">
+    <a class="store-badge" data-store-live hidden href="#" aria-label="Download Patchcord on the App Store"><img src="img/app-store-badge-white.svg" alt="Download on the App Store" width="132" height="44"></a>
+    <span class="pill" data-store-soon>Coming to the App Store</span>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span>© 2026 Chai Wellness</span>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html">Support</a>
+</footer>
+
+<div class="viewer" hidden role="dialog" aria-modal="true" aria-label="Screenshot, full size">
+  <button class="close-v" aria-label="Close">Close</button>
+  <img alt="">
+</div>
+
+<script src="site.js" defer></script>
+<script src="store.js" defer></script>
+</body>
+</html>
