@@ -131,3 +131,17 @@ footer a { color: var(--soft); }
 .page li { margin-bottom: 10px; }
 .updated { font-size: 15px; }
 .contact { font-size: 19px; color: var(--cream); }
+
+/* Patchcord Helper page */
+.lede-left { font-size: 20px; color: var(--cream); margin-bottom: 22px; }
+.dl { margin: 8px 0 8px; }
+.dl-btn { white-space: normal; text-align: center; max-width: 100%; text-decoration: none; background: var(--orange); border-color: var(--orange); color: var(--bg); }
+.dl-btn:hover { background: var(--orange2); border-color: var(--orange2); }
+.page ol.steps-plain { padding-left: 22px; color: var(--soft); }
+.page ol.steps-plain li { margin-bottom: 10px; }
+
+/* ways to use it */
+.uses { background: var(--bg); }
+.cards.uses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 36px; }
+.uses-grid .pair { font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--orange); margin-bottom: 10px; }
+@media (max-width: 900px) { .cards.uses-grid { grid-template-columns: 1fr; } }

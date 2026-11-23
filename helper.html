@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Patchcord Helper</title>
+<meta name="description" content="A small free Mac app that lets Patchcord from the App Store open every plugin you own, including the ones whose licenses and sounds live elsewhere on your Mac.">
+<meta name="theme-color" content="#062A31">
+<link rel="icon" href="img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=7">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html"><img src="img/icon.svg" alt="" width="36" height="36"><span>Patchcord</span></a>
+  <nav><a href="index.html">Home</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+</header>
+<main class="page">
+  <h1>Patchcord Helper</h1>
+  <p class="lede-left">A small free Mac app that lets Patchcord open every plugin you own. You install it once and forget it.</p>
+
+  <div class="dl">
+    <a class="pill dl-btn" data-helper-dl hidden href="#">Download Patchcord Helper (free, for macOS 14 or later)</a>
+    <span class="pill" data-helper-soon>Download coming soon</span>
+  </div>
+
+  <h2>Why it's needed</h2>
+  <p>Apps from the Mac App Store live in a sandbox: a safe space that keeps them out of the rest of your Mac. That's good for you, and Patchcord follows the rule.</p>
+  <p>But many plugins keep their <b>license or sounds</b> elsewhere on your Mac, in places a sandboxed app isn't allowed to look. Opened inside Patchcord, they can't find them, so they won't start. KORG's Gadget instruments are like this, and so are some big sample libraries.</p>
+  <p>Patchcord Helper runs those plugins outside the sandbox, the same way your DAW does, and hands them to Patchcord. Patchcord tells you when a plugin needs it; until then you don't need it at all.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>When Patchcord can't open a plugin by itself, it starts Patchcord Helper and asks it to. The plugin then works like any other: your other devices play it, see its window and move its settings.</li>
+    <li>It remembers nothing of its own. Patchcord keeps the plugin's settings, as it does for every plugin.</li>
+    <li>It quits by itself a minute after Patchcord stops using it.</li>
+  </ul>
+
+  <h2>What it doesn't do</h2>
+  <ul>
+    <li><b>No window, no Dock icon, no menu.</b> You won't see it unless you open a plugin's window.</li>
+    <li><b>Nothing unless Patchcord asks.</b> It only listens to Patchcord on the same Mac, and opens only the plugin you chose.</li>
+    <li><b>Nothing goes to the internet.</b> Like Patchcord, it sends a plugin's notes, sound and settings only between your own devices. No account, no analytics.</li>
+    <li><b>It doesn't change your plugins</b> or anything else on your Mac.</li>
+  </ul>
+
+  <h2>Installing it</h2>
+  <ol class="steps-plain">
+    <li>Download it with the button above and open the file.</li>
+    <li>Drag <b>Patchcord Helper</b> into your <b>Applications</b> folder.</li>
+    <li>Back in Patchcord, press <b>Try Again</b>. That's all: Patchcord starts it whenever it's needed.</li>
+  </ol>
+  <p>It's made by the maker of Patchcord and checked by Apple (notarized), so your Mac opens it without warnings.</p>
+
+  <h2>The first time, your Mac asks twice</h2>
+  <ul>
+    <li><b>Local network:</b> so your other devices can play the plugins it opens. Allow it.</li>
+    <li><b>Screen recording</b>, only if you look at one of its plugins' windows from another device: so it can send that one window. Everything else works without it.</li>
+  </ul>
+
+  <h2>Removing it</h2>
+  <p>Drag Patchcord Helper from Applications to the Trash. Patchcord goes back to opening only the plugins it can open itself.</p>
+
+  <h2>Questions</h2>
+  <p>See <a href="support.html">Support</a>, or write to <a data-email href="#"></a>.</p>
+</main>
+<footer>
+  <span>© 2026 Chai Wellness</span>
+  <a href="privacy.html">Privacy</a>
+  <a href="support.html">Support</a>
+  <a href="helper.html">Patchcord Helper</a>
+</footer>
+<script>
+  // The helper's download, in one place. Empty until it's notarized and uploaded; then the button appears.
+  var HELPER_URL = "downloads/Patchcord-Helper.zip";
+  var SUPPORT_EMAIL = "support@patchcordapp.com";
+  if (HELPER_URL) { var b = document.querySelector("[data-helper-dl]"); b.href = HELPER_URL; b.hidden = false; document.querySelector("[data-helper-soon]").hidden = true; }
+  var a = document.querySelector("[data-email]"); a.href = "mailto:" + SUPPORT_EMAIL; a.textContent = SUPPORT_EMAIL;
+</script>
+</body>
+</html>
