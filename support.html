@@ -53,6 +53,10 @@
   <div class="dl"><a class="pill dl-btn" href="downloads/Patchcord-VST3.dmg">Download the VST3 plugins (free, for macOS 14 or later)</a></div>
   <p>Open the file, then in Finder choose Go, Go to Folder, type <b>~/Library/Audio/Plug-Ins/VST3</b> and press Return. Drag both plugins into that folder, and rescan plugins in your DAW.</p>
 
+  <h2>Sharing a synth from inside AUM</h2>
+  <p>Put <b>Patchcord Host</b> after the synth on its channel in AUM, then route Patchcord Host's MIDI out to the synth. Name the channel in Patchcord Host's window; your other device sees it under Play by that name. Its window checks both steps: it says when it hears the synth, and <b>Send a Test Note</b> shows whether the MIDI route works.</p>
+  <p>Your other device's knobs send MIDI CCs (Cutoff on CC 74, Resonance on CC 71, and more, listed in its window), and Previous and Next Preset send Program Changes. Many synths follow Cutoff and Resonance by themselves; map the others in the synth or with AUM's MIDI control. It works in hosts that route a plugin's MIDI out (AUM, apeMatrix, Drambo); it can't show the synth's own window on the other device.</p>
+
   <h2>Effects after a plugin</h2>
   <p>Up to four effects can follow a shared plugin. They run on the device that runs the plugin, and its sound goes through them there before it comes to you. Add them on that device's <b>Share</b> card, or from the device you play it on with the button under the plugin's name (<b>Add Effects After It...</b>): it lists the effects on the other device. Their settings join the plugin's own, under <b>Knobs</b> and <b>All Settings</b>, and each one's window has its own button on <b>Its Screen</b>. A plugin opened by <a href="helper.html">Patchcord Helper</a> can have effects after it too, with the newest helper.</p>
 
