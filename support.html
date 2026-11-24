@@ -46,10 +46,14 @@
   <p>Patchcord from the App Store lives in Apple's sandbox, and some plugins keep their license or sounds where it isn't allowed to look. When Patchcord says a plugin needs <b>Patchcord Helper</b>, get the free helper from the <a href="helper.html">Patchcord Helper page</a>, put it in Applications and press Try Again. Patchcord starts it whenever it's needed.</p>
 
   <h2>Using it in a DAW</h2>
-  <p>Put <b>Patchcord Remote</b> on an instrument track. On the Mac it's an Audio Unit and a VST3 (Ableton Live sees the VST3 when Audio Units are turned off); on the iPad it's an Audio Unit (AUv3). Choose the plugin from your other device in its window, and play from the track.</p>
+  <p>Put <b>Patchcord Remote</b> on an instrument track, or <b>Patchcord FX</b> on any track to run its sound through an effect on your other device. Both come with the app as Audio Units (AUv3) on the Mac and iPad. Choose the plugin from your other device in its window, and play from the track.</p>
+  <h3 id="vst3">VST3, for Ableton Live with Audio Units turned off</h3>
+  <p>The App Store can't install VST3 plugins, so they're a free download: Patchcord Remote and Patchcord FX, checked by Apple (notarized).</p>
+  <div class="dl"><a class="pill dl-btn" href="downloads/Patchcord-VST3.dmg">Download the VST3 plugins (free, for macOS 14 or later)</a></div>
+  <p>Open the file, then in Finder choose Go, Go to Folder, type <b>~/Library/Audio/Plug-Ins/VST3</b> and press Return. Drag both plugins into that folder, and rescan plugins in your DAW.</p>
 
   <h2>Effects after a plugin</h2>
-  <p>Up to four effects can follow a shared plugin. They run on the device that runs the plugin, and its sound goes through them there before it comes to you. Add them on that device's <b>Share</b> card, or from the device you play it on with the button under the plugin's name (<b>Add Effects After It...</b>): it lists the effects on the other device. Their settings join the plugin's own, under <b>Knobs</b> and <b>All Settings</b>, and each one's window has its own button on <b>Its Screen</b>. A plugin opened by Patchcord Helper can't have effects after it yet.</p>
+  <p>Up to four effects can follow a shared plugin. They run on the device that runs the plugin, and its sound goes through them there before it comes to you. Add them on that device's <b>Share</b> card, or from the device you play it on with the button under the plugin's name (<b>Add Effects After It...</b>): it lists the effects on the other device. Their settings join the plugin's own, under <b>Knobs</b> and <b>All Settings</b>, and each one's window has its own button on <b>Its Screen</b>. A plugin opened by <a href="helper.html">Patchcord Helper</a> can have effects after it too, with the newest helper.</p>
 
   <h2>Its Screen</h2>
   <ul>
