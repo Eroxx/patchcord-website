@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Patchcord: Support</title>
-<meta name="description" content="Help with Patchcord: getting two devices linked, sound, timing, plugins in your DAW, and Its Screen.">
+<meta name="description" content="Help with Patchcord: getting two devices linked, sound, timing, plugins in your DAW, effects after a plugin, and Its Screen.">
 <meta name="theme-color" content="#062A31">
 <link rel="icon" href="img/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -24,7 +24,7 @@
   <p class="contact" data-email-line hidden>Email <a data-email href="#"></a> and say which devices you're using and which plugin.</p>
 
   <h2>Getting started</h2>
-  <p>Open Patchcord on both devices. Tap <b>How It Works</b> on either one and it walks you through the first time: which device has the plugin, choosing it, picking it on the other device, and playing.</p>
+  <p>Open Patchcord on both devices. Tap <b>How It Works</b> on either one and it walks you through the first time: which device runs the plugin and which one sends the notes and hears it, choosing the plugin, picking it on the other device, and playing.</p>
 
   <h2>My devices don't find each other</h2>
   <ul>
@@ -35,7 +35,7 @@
 
   <h2>It's linked, but there's no sound</h2>
   <ul>
-    <li>Check <b>Where its sound plays</b>: <b>Here</b> brings it to the device you're holding, <b>There</b> leaves it on the device that has the plugin.</li>
+    <li>Check <b>Where its sound plays</b>: <b>Here</b> brings it to the device you're holding, <b>There</b> leaves it on the device that runs the plugin.</li>
     <li>Some iPad plugins need their own app opened once before they make sound anywhere. Open it, then try again.</li>
   </ul>
 
@@ -47,6 +47,9 @@
 
   <h2>Using it in a DAW</h2>
   <p>Put <b>Patchcord Remote</b> on an instrument track. On the Mac it's an Audio Unit and a VST3 (Ableton Live sees the VST3 when Audio Units are turned off); on the iPad it's an Audio Unit (AUv3). Choose the plugin from your other device in its window, and play from the track.</p>
+
+  <h2>Effects after a plugin</h2>
+  <p>Up to four effects can follow a shared plugin. They run on the device that runs the plugin, and its sound goes through them there before it comes to you. Add them on that device's <b>Share</b> card, or from the device you play it on with the button under the plugin's name (<b>Add Effects After It...</b>): it lists the effects on the other device. Their settings join the plugin's own, under <b>Knobs</b> and <b>All Settings</b>, and each one's window has its own button on <b>Its Screen</b>. A plugin opened by Patchcord Helper can't have effects after it yet.</p>
 
   <h2>Its Screen</h2>
   <ul>
